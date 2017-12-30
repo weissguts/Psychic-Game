@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Trivia Game</title>
+    <title>Psychic Game</title>
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="assets/js/game.js"></script>
     <![endif]-->
 </head>
 
@@ -23,11 +24,15 @@
 <h1>The Psychic Game!</h1>
 
 <div class="col-lg-6">
-    <p>Guess what letter I'm thinking of: </p>
-    <p>Wins: </p>
-    <p>Losses: </p>
-    <p>Guesses Left: </p>
-    <p>Your Guesses so far: </p>
+    <p id="guessLetterStart">Guess what letter I'm thinking of: </p>
+    <p id="wins">Wins: </p>
+    <p id="losses">Losses: </p>
+    <p id="guessesLeft">Guesses Left: </p>
+
+    <p id="guessBox"><input type="text" id="guessBoxInput" maxlength="1"> <button id="guessButton" type="button">Submit</button> </p>
+
+    <p id="guessSoFar">Guesses so far: </p>
+
 
 
 
@@ -46,6 +51,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/game.js"></script>
+<script type="text/javascript" src="assets/js/game.js"></script>
+
+
+
 </body>
 </html>
